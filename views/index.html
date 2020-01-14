@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        includeScript("../static/build/bundle.js")
+            .then(includeScript("../static/index.js"));
+
+        function includeScript(src)
+        {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = src + "?v=" + parseInt(Math.random() * 1000000);
+
+            var promise = new Promise((resolve, reject) => script.onload = resolve);
+
+            document.head.appendChild(script);
+
+            return promise;
+        }
+    </script>
+</body>
+</html>
