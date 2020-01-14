@@ -32,11 +32,17 @@
     <Content Include=".babelrc">
       <SubType>Code</SubType>
     </Content>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="src\module.ts" />
     <Content Include="src\index.ts">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\build\bundle.js" />
+    <Content Include="static\index.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="tsconfig.json">
