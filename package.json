@@ -29,6 +29,6 @@
         "typescript": "^3.8.0-dev.20200111",
         "typescript-plugin-styled-components": "^1.4.3",
         "webpack": "^4.41.5",
-        "webpack-cli": "^3.3.10"
+        "webpack-cli": "^3.3.12"
     }
 }
